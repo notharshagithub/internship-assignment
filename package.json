@@ -6,6 +6,9 @@
   "scripts": {
     "test:db": "node test-db-connection.js",
     "test:sheets": "node test-sheets-api.js",
+    "audit": "node data-audit.js",
+    "generate-sample": "node sample-messy-data.js",
+    "check-data": "node check-sheet-data.js",
     "start": "node index.js"
   },
   "keywords": [
