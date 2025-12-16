@@ -1,0 +1,10 @@
+{
+  "name": "datasets-etl",
+  "version": "1.0.0",
+  "scripts": {
+    "setup": "psql $DATABASE_URL -f schema.sql",
+    "load:clean": "node load-clean-dataset.js",
+    "load:messy": "node load-messy-dataset.js",
+    "load:all": "npm run load:clean && npm run load:messy"
+  }
+}

@@ -1,0 +1,32 @@
+# ETL Pipeline Requirements
+
+## Node.js Dependencies
+- pg@^8.11.3 - PostgreSQL client
+- dotenv@^16.3.1 - Environment variable management
+- googleapis@^126.0.1 - Google Sheets API client
+
+## Install
+npm install
+
+## Environment Variables Required
+- DATABASE_URL - PostgreSQL/NeonDB connection string
+- GOOGLE_SHEETS_CREDENTIALS_PATH - Path to Google service account credentials
+- GOOGLE_SHEET_ID - Google Sheets spreadsheet ID
+
+## Database Requirements
+- PostgreSQL 15+ or NeonDB
+- Schema created (run: npm run test:schema)
+- Tables: customers, products, orders, order_items, states
+
+## Google Cloud Requirements
+- Service Account with Google Sheets API enabled
+- Credentials JSON file
+- Sheet shared with service account email
+
+## Prerequisites Checklist
+- [ ] Node.js v16+ installed
+- [ ] Database schema created
+- [ ] Google credentials configured
+- [ ] .env file set up
+- [ ] Database connection tested (npm run test:db)
+- [ ] Google Sheets connection tested (npm run test:sheets)

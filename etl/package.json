@@ -1,0 +1,13 @@
+{
+  "name": "etl-pipeline",
+  "version": "1.0.0",
+  "description": "ETL Pipeline for Google Sheets to PostgreSQL/NeonDB migration",
+  "main": "etl.js",
+  "scripts": {
+    "start": "node etl.js",
+    "test": "node test-etl.js"
+  },
+  "keywords": ["etl", "google-sheets", "postgresql", "data-migration"],
+  "author": "",
+  "license": "ISC"
+}

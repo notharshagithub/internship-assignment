@@ -6,10 +6,16 @@
   "scripts": {
     "test:db": "node test-db-connection.js",
     "test:sheets": "node test-sheets-api.js",
+    "test:schema": "node test-schema.js",
     "audit": "node data-audit.js",
     "generate-sample": "node sample-messy-data.js",
     "check-data": "node check-sheet-data.js",
-    "start": "node index.js"
+    "start": "node index.js",
+    "etl": "node etl/etl.js",
+    "etl:test": "node etl/test-etl.js",
+    "etl:dry-run": "node etl/etl.js --dry-run",
+    "etl:continue": "node etl/etl.js --continue-on-error",
+    "etl:help": "node etl/etl.js --help"
   },
   "keywords": [
     "postgresql",
